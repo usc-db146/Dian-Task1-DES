@@ -12,6 +12,7 @@ variables are available to be used anywhere in our html document
     --color3: A1869E;
     --color2: BBADA0;
     --color1: D1C6AD;
+    --colornew: AFDFB5;
     /* add in other color variables for color pallete */
 }
 
@@ -19,175 +20,80 @@ variables are available to be used anywhere in our html document
 .main-container {
     max-width: 72em;
     margin: 0 auto;
-    font-family: Inter;
-    background-color: seashell;
+    font-family: David Libre;
+    background-color: rgb(	175, 223, 181);
     /* TODO: set the main font color */
-    color: darkblue;
 }
-
-/* Here we define the aspects of style of our elements other than their grid layout */
-.banner {
-    /* TODO: banner styling */
-    margin: 5mm;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:  4em;
+.Title {
+    font-size: 100px;
 }
-
-.banner-title {
-    /* TODO: banner main title font styling */
-}
-
-.banner-subtitle {
-    /* TODO: banner subtitle font styling */
-}
-
-.team-member-card {
-    /* TODO: style the card as a column based flexbox with rounded corners */
-    display: flex;
-    flex-direction: column;
-}
-
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.team-member-card-image {
-    width: 100%;
+.BaseText {
+    font-size: 20px;
 }
 .Images {
-    width:20%;
-}
-
-.team-member-card-blurb {
-    /* TODO: style the blurb with padding */
-    font-size: 1em;
-    /*background-color: ; */
-}
-
-.our-clients-title {
-    /* TODO: style the 'Our Clients' text font */
-}
-
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.client-icon {
+    object-fit: cover;
     width: 100%;
+    height: auto;
 }
-
-/* now we create names for the grid areas for specific elements */
-#banner {
-    /* TODO: give the grid-area a name */
-    grid-area: ban;
-}
-
-#teamMemberCard1 {
-    /* TODO: give the grid-area a name */
-    grid-area: tm1;
-}
-
-#teamMemberCard2 {
-    /* TODO: give the grid-area a name */
-    grid-area: tm2;
-}
-
-#teamMemberCard3 {
-    /* TODO: give the grid-area a name */
-    grid-area: tm3;
-}
-
-#ourClientsTitle {
-    /* TODO: give the grid-area a name */
-    grid-area: oct;
-}
-
-#clientIcon1 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci1;
-}
-
-#clientIcon2 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci2;
-}
-
-#clientIcon3 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci3;
-}
-
-#clientIcon4 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci4;
-}
-
-#clientIcon5 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci5;
-}
-
-#clientIcon6 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci6;
-}
-
-#clientIcon7 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci7;
-}
-
-#clientIcon8 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci8;
+.ExampleIntro {
+    min-height: 32em;
+    display: flex;
+    flex-direction: column;
+    
 }
 #TitleText {
-    grid-area: TT;
+    grid-area: TT1;
 }
 
 #BasilIntro {
-    grid-area: BI;
+    grid-area: BI1;
 }
 
 #ArcDeTriompheIntro {
-    grid-area: AI;
+    grid-area: AI1;
 }
 
 #AppIntroductionText {
-    grid-area: AT;
+    grid-area: AT1;
 }
 
-#Internetdata {
-    grid-area: ID;
+#InternetData {
+    grid-area: ID1;
 }
 
 #PhoneScan {
-    grid-area: PS;
+    grid-area: PS1;
 }
 
 #BasilScanned {
-    grid-area: BS;
+    grid-area: BS1;
 }
 
 #ArcDeTrimpheScanned {
-    grid-area: AS;
+    grid-area: AS1;
 }
 
 #BaselineInspiration {
-    grid-area: BI;
+    grid-area: BN1;
 }
 
 #BloodLeaf {
-    grid-area: BL;
+    grid-area: BL1;
 }
 
 #BlueDragon {
-    grid-area: BD;
+    grid-area: BD1;
 }
 #BulletTrain {
-    grid-area: BT;
+    grid-area: BT1;
 }
 
 #DiscoverScanLearn {
-    grid-area: DS;
+    grid-area: DS1;
 }
 
 #Credits {
-    grid-area: CS;
+    grid-area: CS1;
 }
 
 
@@ -195,8 +101,15 @@ variables are available to be used anywhere in our html document
 /* Use a flexible layout grid */
 .main-container {
     display: grid;
+    row-gap: 1em;
     column-gap: 1em;
+    object-fit: fill;
 }
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or "contain" */
+  }
 
   
 /* 
@@ -208,30 +121,35 @@ media queries for progressively bigger screen widths
 .main-container {
     /* TODO: setup the grid-template for mobile phone layout */
     grid-template:
-    "TT TT TT TT TT TT" minmax(8em, auto)
-    "BI BI BI AI AI AI" minmax(8em, auto)
-    "AT AT AT AT AT AT" minmax(8em, auto)
-    "ID ID ID PS PS PS" minmax(8em, auto)
-    "BS BS BS AS AS AS" minmax(8em, auto)
-    "BI BI BI BI BI BI" minmax(8em, auto)
-    "BL BL BD BD BT BT" minmax(8em, auto)
-    "DS DS DS DS DS DS" minmax(8em, auto)
-    "CS CS CS CS CS CS" minmax(8em, auto)
+        "TT1" minmax(auto, auto)
+        "BI1" minmax(auto, auto)
+        "AI1" minmax(auto, auto)
+        "AT1" minmax(auto, auto)
+        "ID1" minmax(auto, auto)
+        "PS1" minmax(auto, auto)
+        "BS1" minmax(auto, auto)
+        "AS1" minmax(auto, auto)
+        "BN1" minmax(auto, auto)
+        "BL1" minmax(auto, auto)
+        "BD1" minmax(auto, auto)
+        "BT1" minmax(auto, auto)
+        "DS1" minmax(auto, auto)
+        "CS1" minmax(auto, auto)
 }
-
 @media (min-width: 50em) {
     .main-container {
             /* TODO: setup the grid-template for tablet layout */
             grid-template:
-            "TT TT TT TT TT TT" minmax(8em, auto)
-            "BI BI BI AI AI AI" minmax(8em, auto)
-            "AT AT AT AT AT AT" minmax(8em, auto)
-            "ID ID ID PS PS PS" minmax(8em, auto)
-            "BS BS BS AS AS AS" minmax(8em, auto)
-            "BI BI BI BI BI BI" minmax(8em, auto)
-            "BL BL BD BD BT BT" minmax(8em, auto)
-            "DS DS DS DS DS DS" minmax(8em, auto)
-            "CS CS CS CS CS CS" minmax(8em, auto)
+            "TT1 TT1 TT1 TT1 TT1 TT1 TT1 TT1 TT1 TT1 TT1 TT1" minmax(auto, auto)
+            "BI1 BI1 BI1 BI1 BI1 BI1 AI1 AI1 AI1 AI1 AI1 AI1" minmax(auto, auto)
+            "AT1 AT1 AT1 AT1 AT1 AT1 AT1 AT1 AT1 AT1 AT1 AT1" minmax(auto, auto)
+            "ID1 ID1 ID1 ID1 ID1 ID1 PS1 PS1 PS1 PS1 PS1 PS1" minmax(auto, auto)
+            "BS1 BS1 BS1 BS1 BS1 BS1 AS1 AS1 AS1 AS1 AS1 AS1" minmax(auto, auto)
+            "BN1 BN1 BN1 BN1 BN1 BN1 BN1 BN1 BN1 BN1 BN1 BN1" minmax(auto, auto)
+            "BL1 BL1 BL1 BL1 BL1 BL1 BT1 BT1 BT1 BT1 BT1 BT1" minmax(auto, auto)
+            ".   .   .  BD1 BD1 BD1 BD1 BD1 BD1 .    .   .  "minmax(auto, auto)
+            "DS1 DS1 DS1 DS1 DS1 DS1 DS1 DS1 DS1 DS1 DS1 DS1" minmax(auto, auto)
+            "CS1 CS1 CS1 CS1 CS1 CS1 CS1 CS1 CS1 CS1 CS1 CS1" minmax(auto, auto)
     }
 }
 
@@ -239,14 +157,22 @@ media queries for progressively bigger screen widths
     .main-container {
         /* TODO: setup the grid-template for desktop layout */
         grid-template:
-        "TT TT TT TT TT TT" minmax(8em, auto)
-        "BI BI BI AI AI AI" minmax(8em, auto)
-        "AT AT AT AT AT AT" minmax(8em, auto)
-        "ID ID ID PS PS PS" minmax(8em, auto)
-        "BS BS BS AS AS AS" minmax(8em, auto)
-        "BI BI BI BI BI BI" minmax(8em, auto)
-        "BL BL BD BD BT BT" minmax(8em, auto)
-        "DS DS DS DS DS DS" minmax(8em, auto)
-        "CS CS CS CS CS CS" minmax(8em, auto)
+        "TT1 TT1 TT1 TT1 TT1 TT1" minmax(auto, auto)
+        "BI1 BI1 BI1 AI1 AI1 AI1" minmax(auto, auto)
+        "AT1 AT1 AT1 AT1 AT1 AT1" minmax(auto, auto)
+        "ID1 ID1 ID1 PS1 PS1 PS1" minmax(auto, auto)
+        "BS1 BS1 BS1 AS1 AS1 AS1" minmax(auto, auto)
+        "BN1 BN1 BN1 BN1 BN1 BN1" minmax(auto, auto)
+        "BL1 BL1 BD1 BD1 BT1 BT1" minmax(auto, auto)
+        "DS1 DS1 DS1 DS1 DS1 DS1" minmax(auto, auto)
+        "CS1 CS1 CS1 CS1 CS1 CS1" minmax(auto, auto)
     }
+}
+
+/* Image sizing for consistent appearance */
+.grid-item img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Force the image to take up the entire width of its container */
+    height: 100%; /* Force the image to take up the entire height of its container */
 }

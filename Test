@@ -1,0 +1,175 @@
+.main-container {
+    /* TODO: setup the grid-template for mobile phone layout */
+    grid-template:
+    "TT TT TT TT TT TT" minmax(8em, auto)
+    "BI BI BI AI AI AI" minmax(8em, auto)
+    "AT AT AT AT AT AT" minmax(8em, auto)
+    "ID ID ID PS PS PS" minmax(8em, auto)
+    "BS BS BS AS AS AS" minmax(8em, auto)
+    "BI BI BI BI BI BI" minmax(8em, auto)
+    "BL BL BD BD BT BT" minmax(8em, auto)
+    "DS DS DS DS DS DS" minmax(8em, auto)
+    "CS CS CS CS CS CS" minmax(8em, auto)
+}
+
+@media (min-width: 50em) {
+    .main-container {
+            /* TODO: setup the grid-template for tablet layout */
+            grid-template:
+            "TT TT TT TT TT TT" minmax(8em, auto)
+            "BI BI BI AI AI AI" minmax(8em, auto)
+            "AT AT AT AT AT AT" minmax(8em, auto)
+            "ID ID ID PS PS PS" minmax(8em, auto)
+            "BS BS BS AS AS AS" minmax(8em, auto)
+            "BI BI BI BI BI BI" minmax(8em, auto)
+            "BL BL BD BD BT BT" minmax(8em, auto)
+            "DS DS DS DS DS DS" minmax(8em, auto)
+            "CS CS CS CS CS CS" minmax(8em, auto)
+    }
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        /* TODO: setup the grid-template for desktop layout */
+        grid-template:
+        "TT TT TT TT TT TT" minmax(8em, auto)
+        "BI BI BI AI AI AI" minmax(8em, auto)
+        "AT AT AT AT AT AT" minmax(8em, auto)
+        "ID ID ID PS PS PS" minmax(8em, auto)
+        "BS BS BS AS AS AS" minmax(8em, auto)
+        "BI BI BI BI BI BI" minmax(8em, auto)
+        "BL BL BD BD BT BT" minmax(8em, auto)
+        "DS DS DS DS DS DS" minmax(8em, auto)
+        "CS CS CS CS CS CS" minmax(8em, auto)
+    }
+}
+
+
+
+<div class="BasilIntro" id="BasilIntro">
+      <img class="Images" id="BasilImage" src="./images/1296x728_Holy_Basil.jpeg"></img>
+      <div class="BaseText" id="BasilText">Who can take one look at this very unique flower and know what it’s called and how it’s used?</div>
+    </div>
+    <div class="ArcDeTriompheIntro" id="ArcDeTriompheIntro">
+      <img class="Images" id="ArcDeTriompheImage" src="./images/arc_triomphe.jpeg"></img>
+      <div class="BaseText" id="ArcDeTriompheText">And a historical symbol of France, some might know its name but what about the significant symbol it represents today? How will they know? </div>
+    </div>
+
+    <div class="BaseText" id="AppIntroductionText">Now everyone today can finally understand the treasures that surround our interaction today, with the new Timely consciousness app</div>
+    
+    <div class="Internetdata" id="Internetdata">
+      <img class="Images" id="InternetDataImage" src="./images/istockphoto-1309275676-170667a.jpeg"></img>
+      <div class="BaseText" id="BasilText">We have access to a unfathomable range of data over the internet but we can’t always know the name of what we are searching for.</div>
+    </div>
+    <div class="PhoneScan" id="PhoneScan">
+      <img class="Images" id="PhoneScanImage" src="./images/Capture5.jpeg"></img>
+      <div class="BaseText" id="PhoneScanText">So now you don’t have to. Just scan what you want to learn more about and our app scours the internet so you don’t have to</div>
+    </div>
+
+    <img class="Images" id="BasilScanned" src="./images/Capture6.jpeg"></img>
+    <img class="Images" id="ArcDeTrimpheScanned" src="./images/Capture7.jpeg"></img>
+    
+    <div class="BaseText" id="BaselineInspiration"></div>
+
+    <img class="Images" id="BloodLeaf" src="./images/Vy3F8vU9Q0IuwXnvkVn2JCMD1AP4xiOQ9HygGJxs.jpeg"></img>
+    <img class="Images" id="BlueDragon" src="./images/blue-dragon..jpeg"></img>
+    <img class="Images" id="BulletTrain" src="./images/N700S makes it maiden voyage.jpeg"></img>
+    <div class="DiscoverScanLearn" id="DiscoverScanLearn"></div>
+    <div class="Credits" id="Credits">
+      <div class="CreditsTitle" id="CreditsTitle">Credits</div>
+      <div class="CreditsSources" id="CreditsSources"></div>
+    </div>
+
+
+    <div class="TitleText" id="TitleText">
+      <div class="Title" id="Title">Timely consciousness</div>
+      <div class="Introduction" id="Introduction">How well do each of us understand the symbols in the world that is moving around us?</div>
+    </div>
+
+    @media (min-width: 50em) {
+    .main-container {
+            /* TODO: setup the grid-template for tablet layout */
+            grid-template:
+            "TT TT TT TT TT TT" minmax(8em, auto)
+            "BI BI BI AI AI AI" minmax(8em, auto)
+            "AT AT AT AT AT AT" minmax(8em, auto)
+            "ID ID ID PS PS PS" minmax(8em, auto)
+            "BS BS BS AS AS AS" minmax(8em, auto)
+            "BI BI BI BI BI BI" minmax(8em, auto)
+            "BL BL BD BD BT BT" minmax(8em, auto)
+            "DS DS DS DS DS DS" minmax(8em, auto)
+            "CS CS CS CS CS CS" minmax(8em, auto)
+    }
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        /* TODO: setup the grid-template for desktop layout */
+        grid-template:
+        "TT1 TT1 TT1 TT1 TT1 TT1" minmax(8em, auto)
+        "BI1 BI1 BI1 AI1 AI1 AI1" minmax(8em, auto)
+        "AT1 AT1 AT1 AT1 AT1 AT1" minmax(8em, auto)
+        "ID1 ID1 ID1 PS1 PS1 PS1" minmax(8em, auto)
+        "BS1 BS1 BS1 AS1 AS1 AS1" minmax(8em, auto)
+        "BI1 BI1 BI1 BI1 BI1 BI1" minmax(8em, auto)
+        "BL1 BL1 BD1 BD1 BT1 BT1" minmax(8em, auto)
+        "DS1 DS1 DS1 DS1 DS1 DS1" minmax(8em, auto)
+        "CS1 CS1 CS1 CS1 CS1 CS1" minmax(8em, auto)
+    }
+}
+
+#BloodLeaf {
+  grid-area: BL1;
+}
+
+#BlueDragon {
+  grid-area: BD1;
+}
+#BulletTrain {
+  grid-area: BT1;
+}
+
+<div class="ExampleIntro" id="BasilIntro">
+      
+  <div class="BaseText" id="BasilText">Who can take one look at this very unique flower and know what it’s called and how it’s used?</div>
+</div>
+<div class="ExampleIntro" id="ArcDeTriompheIntro">
+  
+  <div class="BaseText" id="ArcDeTriompheText">And a historical symbol of France, some might know its name but what about the significant symbol it represents today? How will they know? </div>
+</div>
+
+<div class="BaseText" id="AppIntroductionText">Now everyone today can finally understand the treasures that surround our interaction today, with the new Timely consciousness app</div>
+
+<div class="InternetData" id="InternetData">
+  <img class="Images" id="InternetDataImage" src="./images/istockphoto-1309275676-170667a.jpeg"></img>
+  <div class="BaseText" id="InternetDataText">We have access to a unfathomable range of data over the internet but we can’t always know the name of what we are searching for.</div>
+</div>
+<div class="PhoneScan" id="PhoneScan">
+  <img class="Images" id="PhoneScanImage" src="./images/Capture5.jpeg"></img>
+  <div class="BaseText" id="PhoneScanText">So now you don’t have to. Just scan what you want to learn more about and our app scours the internet so you don’t have to</div>
+</div>
+
+<img class="Images" id="BasilScanned" src="./images/Capture6.jpeg"></img>
+<img class="Images" id="ArcDeTrimpheScanned" src="./images/Capture7.jpeg"></img>
+
+<div class="BaseText" id="BaselineInspiration">We all have access to so much valuable information, so why not use it effectively? Scan and understand the rich history that surrounds us.</div>
+<img class="Images" id="BloodLeaf" src="./images/Vy3F8vU9Q0IuwXnvkVn2JCMD1AP4xiOQ9HygGJxs.jpeg"></img>
+<img class="Images" id="BlueDragon" src="./images/blue-dragon..jpeg"></img>
+<img class="Images" id="BulletTrain" src="./images/N700S makes it maiden voyage.jpeg"></img>
+<div class="DiscoverScanLearn" id="DiscoverScanLearn"></div>
+<div class="Credits" id="Credits">
+  <div class="CreditsTitle" id="CreditsTitle">Credits</div>
+  <div class="CreditsSources" id="CreditsSources">Anon., 1999. Arc de Triomphe Présentation du monument. [Online] Available at: https://www.cometoparis.com/paris-guide/paris-monuments/arc-de-triomphe-s928#:~:text=The%20Arc%20de%20Triomphe%20honors,from%20the%20First%20World%20War. [Accessed 15 August 2023].
+
+    Anon., 2023. THE CHAMPS-ÉLYSÉES AND THE ARC DE TRIOMPHE. [Online] Available at: https://www.baume-hotel-paris.com/monuments/arcdetriomphe/ [Accessed 13 August 2023].
+    
+    Anon., 2023. Top 10 Coolest Looking Animals. [Online] Available at: https://www.animalsaroundtheglobe.com/coolest-looking-animals/ [Accessed 15 August 2023].
+    
+    Anon., n.d. https://unsplash.com/s/photos/iphone-screen. [Online] Available at: https://unsplash.com/s/photos/iphone-screen [Accessed 13 August 2023].
+    
+    Anon., n.d. Iresine herbstii (bloodleaf). [Online] Available at: https://www.gardenia.net/plant/iresine-herbstii [Accessed 15 August 2023].
+    
+    Brady, S., 2020. Japan's record-breaking bullet train can also run during earthquakes. [Online] Available at: https://www.lonelyplanet.com/news/japan-n700s-bullet-train [Accessed 15 August 2023].
+    
+    McCulloch, M. & Banks, W., 2018. https://www.healthline.com/health/food-nutrition/basil-benefits#Not-your-basic-basil. [Online] Available at: https://www.healthline.com/health/food-nutrition/basil-benefits [Accessed 13 August 2023].</div>
+</div>
