@@ -89,7 +89,7 @@ variables are available to be used anywhere in our html document
 }
 
 #DiscoverScanLearn {
-    grid-area: DS1;
+    grid-area: ZX1;
 }
 
 #Credits {
@@ -164,7 +164,7 @@ media queries for progressively bigger screen widths
         "BS1 BS1 BS1 AS1 AS1 AS1" minmax(auto, auto)
         "BN1 BN1 BN1 BN1 BN1 BN1" minmax(auto, auto)
         "BL1 BL1 BD1 BD1 BT1 BT1" minmax(auto, auto)
-        "DS1 DS1 DS1 DS1 DS1 DS1" minmax(auto, auto)
+        "ZX1 ZX1 ZX1 ZX1 ZX1 ZX1" minmax(auto, auto)
         "CS1 CS1 CS1 CS1 CS1 CS1" minmax(auto, auto)
     }
 }
