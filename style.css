@@ -7,6 +7,11 @@ variables are available to be used anywhere in our html document
 :root {
     --white-font: #FFFFFF;
     --black-font: #000000;
+    --color5: 0B1D51;
+    --color4: 797596;
+    --color3: A1869E;
+    --color2: BBADA0;
+    --color1: D1C6AD;
     /* add in other color variables for color pallete */
 }
 
@@ -15,12 +20,17 @@ variables are available to be used anywhere in our html document
     max-width: 72em;
     margin: 0 auto;
     font-family: Inter;
+    background-color: seashell;
     /* TODO: set the main font color */
+    color: darkblue;
 }
 
 /* Here we define the aspects of style of our elements other than their grid layout */
 .banner {
     /* TODO: banner styling */
+    margin: 5mm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:  4em;
 }
 
 .banner-title {
@@ -33,15 +43,22 @@ variables are available to be used anywhere in our html document
 
 .team-member-card {
     /* TODO: style the card as a column based flexbox with rounded corners */
+    display: flex;
+    flex-direction: column;
 }
 
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
 .team-member-card-image {
     width: 100%;
 }
+.Images {
+    width:20%;
+}
 
 .team-member-card-blurb {
     /* TODO: style the blurb with padding */
+    font-size: 1em;
+    /*background-color: ; */
 }
 
 .our-clients-title {
@@ -56,61 +73,131 @@ variables are available to be used anywhere in our html document
 /* now we create names for the grid areas for specific elements */
 #banner {
     /* TODO: give the grid-area a name */
+    grid-area: ban;
 }
 
 #teamMemberCard1 {
     /* TODO: give the grid-area a name */
+    grid-area: tm1;
 }
 
 #teamMemberCard2 {
     /* TODO: give the grid-area a name */
+    grid-area: tm2;
 }
 
 #teamMemberCard3 {
     /* TODO: give the grid-area a name */
+    grid-area: tm3;
 }
 
 #ourClientsTitle {
     /* TODO: give the grid-area a name */
+    grid-area: oct;
 }
 
 #clientIcon1 {
     /* TODO: give the grid-area a name */
+    grid-area: ci1;
 }
 
 #clientIcon2 {
     /* TODO: give the grid-area a name */
+    grid-area: ci2;
 }
 
 #clientIcon3 {
     /* TODO: give the grid-area a name */
+    grid-area: ci3;
 }
 
 #clientIcon4 {
     /* TODO: give the grid-area a name */
+    grid-area: ci4;
 }
 
 #clientIcon5 {
     /* TODO: give the grid-area a name */
+    grid-area: ci5;
 }
 
 #clientIcon6 {
     /* TODO: give the grid-area a name */
+    grid-area: ci6;
 }
 
 #clientIcon7 {
     /* TODO: give the grid-area a name */
+    grid-area: ci7;
 }
 
 #clientIcon8 {
     /* TODO: give the grid-area a name */
+    grid-area: ci8;
 }
+#TitleText {
+    grid-area: TT;
+}
+
+#BasilIntro {
+    grid-area: BI;
+}
+
+#ArcDeTriompheIntro {
+    grid-area: AI;
+}
+
+#AppIntroductionText {
+    grid-area: AT;
+}
+
+#Internetdata {
+    grid-area: ID;
+}
+
+#PhoneScan {
+    grid-area: PS;
+}
+
+#BasilScanned {
+    grid-area: BS;
+}
+
+#ArcDeTrimpheScanned {
+    grid-area: AS;
+}
+
+#BaselineInspiration {
+    grid-area: BI;
+}
+
+#BloodLeaf {
+    grid-area: BL;
+}
+
+#BlueDragon {
+    grid-area: BD;
+}
+#BulletTrain {
+    grid-area: BT;
+}
+
+#DiscoverScanLearn {
+    grid-area: DS;
+}
+
+#Credits {
+    grid-area: CS;
+}
+
+
 
 /* Use a flexible layout grid */
 .main-container {
     display: grid;
     column-gap: 1em;
 }
+
   
 /* 
 Responsive Layout breakpoints. We start 'mobile-first' i.e. we define how the layout should look
@@ -120,16 +207,46 @@ media queries for progressively bigger screen widths
 */
 .main-container {
     /* TODO: setup the grid-template for mobile phone layout */
+    grid-template:
+    "TT TT TT TT TT TT" minmax(8em, auto)
+    "BI BI BI AI AI AI" minmax(8em, auto)
+    "AT AT AT AT AT AT" minmax(8em, auto)
+    "ID ID ID PS PS PS" minmax(8em, auto)
+    "BS BS BS AS AS AS" minmax(8em, auto)
+    "BI BI BI BI BI BI" minmax(8em, auto)
+    "BL BL BD BD BT BT" minmax(8em, auto)
+    "DS DS DS DS DS DS" minmax(8em, auto)
+    "CS CS CS CS CS CS" minmax(8em, auto)
 }
 
-@media (min-width: 50em) and (max-resolution: 2dppx) {
+@media (min-width: 50em) {
     .main-container {
             /* TODO: setup the grid-template for tablet layout */
+            grid-template:
+            "TT TT TT TT TT TT" minmax(8em, auto)
+            "BI BI BI AI AI AI" minmax(8em, auto)
+            "AT AT AT AT AT AT" minmax(8em, auto)
+            "ID ID ID PS PS PS" minmax(8em, auto)
+            "BS BS BS AS AS AS" minmax(8em, auto)
+            "BI BI BI BI BI BI" minmax(8em, auto)
+            "BL BL BD BD BT BT" minmax(8em, auto)
+            "DS DS DS DS DS DS" minmax(8em, auto)
+            "CS CS CS CS CS CS" minmax(8em, auto)
     }
 }
 
-@media (min-width: 75em) and (max-resolution: 2dppx) {
+@media (min-width: 75em) {
     .main-container {
         /* TODO: setup the grid-template for desktop layout */
+        grid-template:
+        "TT TT TT TT TT TT" minmax(8em, auto)
+        "BI BI BI AI AI AI" minmax(8em, auto)
+        "AT AT AT AT AT AT" minmax(8em, auto)
+        "ID ID ID PS PS PS" minmax(8em, auto)
+        "BS BS BS AS AS AS" minmax(8em, auto)
+        "BI BI BI BI BI BI" minmax(8em, auto)
+        "BL BL BD BD BT BT" minmax(8em, auto)
+        "DS DS DS DS DS DS" minmax(8em, auto)
+        "CS CS CS CS CS CS" minmax(8em, auto)
     }
 }
