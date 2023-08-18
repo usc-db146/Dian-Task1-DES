@@ -28,7 +28,7 @@ variables are available to be used anywhere in our html document
     font-size: 100px;
 }
 .BaseText {
-    font-size: 20px;
+    font-size: 27px;
 }
 .Images {
     object-fit: cover;
@@ -40,6 +40,13 @@ variables are available to be used anywhere in our html document
     display: flex;
     flex-direction: column;
     
+}
+.Introduction {
+    font-size: 30px;
+}
+.DiscoverScanLearn {
+    text-align: center;
+    font-size: 35px;
 }
 #TitleText {
     grid-area: TT1;
@@ -55,6 +62,9 @@ variables are available to be used anywhere in our html document
 
 #AppIntroductionText {
     grid-area: AT1;
+    text-align: center;
+    margin-left: 8Rem;
+    margin-right: 8Rem;
 }
 
 #InternetData {
@@ -75,6 +85,9 @@ variables are available to be used anywhere in our html document
 
 #BaselineInspiration {
     grid-area: BN1;
+    font-size: 27px;
+    margin-left: 8Rem;
+    margin-right: 8Rem;
 }
 
 #BloodLeaf {
