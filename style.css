@@ -4,6 +4,9 @@ so that we can refer to particular colors by name instead of hexadecimal values.
 This is applied to the 'root' psuedo-element, which just means that these color
 variables are available to be used anywhere in our html document
 */
+html  {
+    background-color:  rgb(	175, 223, 181);
+}
 :root {
     --white-font: #FFFFFF;
     --black-font: #000000;
