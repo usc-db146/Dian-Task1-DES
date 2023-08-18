@@ -52,9 +52,6 @@ variables are available to be used anywhere in our html document
 .CreditsTitle {
     font-size: 64px;
 }
-.CreditsSources {
-    font
-}
 #TitleText {
     grid-area: TT1;
 }
@@ -156,7 +153,7 @@ media queries for progressively bigger screen widths
         "DS1" minmax(auto, auto)
         "CS1" minmax(auto, auto)
 }
-@media (min-width: 50em) {
+@media (min-width: 70em) {
     .main-container {
             /* TODO: setup the grid-template for tablet layout */
             grid-template:
@@ -173,7 +170,7 @@ media queries for progressively bigger screen widths
     }
 }
 
-@media (min-width: 75em) {
+@media (min-width: 80em) {
     .main-container {
         /* TODO: setup the grid-template for desktop layout */
         grid-template:
