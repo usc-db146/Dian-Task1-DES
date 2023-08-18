@@ -24,6 +24,7 @@ variables are available to be used anywhere in our html document
     background-color: rgb(	175, 223, 181);
     /* TODO: set the main font color */
 }
+
 .Title {
     font-size: 100px;
 }
@@ -47,6 +48,12 @@ variables are available to be used anywhere in our html document
 .DiscoverScanLearn {
     text-align: center;
     font-size: 35px;
+}
+.CreditsTitle {
+    font-size: 64px;
+}
+.CreditsSources {
+    font
 }
 #TitleText {
     grid-area: TT1;
